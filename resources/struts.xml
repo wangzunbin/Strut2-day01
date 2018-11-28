@@ -34,7 +34,7 @@
 	<package name="helloPkg" extends="struts-default" namespace="/crm">
 		<action name="hello" class="com.wangzunbin._01_hello.HelloAction" method="sayHello">
 			<result name="will" type="dispatcher">
-				<param name="location">/views/hello/welcome.jsp</param>
+				<param name="location">/WEB-INF/views/hello/welcome.jsp</param>
 			</result>
 		</action>
 	</package>
