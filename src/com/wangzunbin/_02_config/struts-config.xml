@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="basePkg" extends="struts-default"
+		abstract="true">
+
+	</package>
+
+	<package name="oaPkg" extends="basePkg" namespace="/oa">
+		<action name="oa">
+			<result name="success" type="dispatcher">
+				<param name="location">/index.jsp</param>
+			</result>
+		</action>
+	</package>
+
+<!-- 	<package name="crmPkg" extends="basePkg" namespace="/crm">
+
+	</package>
+ -->
+ 
+	<!-- 从/config命名空间下的other重定向到/crm下的hello Action -->
+	
+	<package name="configPkg" extends="basePkg" namespace="/config">
+	</package>
+</struts>
